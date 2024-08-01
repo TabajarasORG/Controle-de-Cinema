@@ -1,12 +1,13 @@
 ﻿using ControleDeCinema.Dominio.ModuloFilme;
 using ControleDeCinema.Infra.Orm.Compartilhado;
+using Microsoft.EntityFrameworkCore;
 
 namespace ControleDeCinema.Infra.Orm.ModuloFilme;
 
 public class RepositorioFilme
 {
      ControleDeCinamaDbContext dbContext;
-
+     
      public RepositorioFilme(ControleDeCinamaDbContext dbContext)
      {
           this.dbContext = dbContext;
@@ -30,6 +31,7 @@ public class RepositorioFilme
 
           return true;
      }
+     
 
      public bool Excluir(Filme registro)
      {

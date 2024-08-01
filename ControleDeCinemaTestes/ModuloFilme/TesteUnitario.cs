@@ -11,12 +11,12 @@ public class TesteUnitario
     {
         //Arrange
         Filme novoFilme;
-        
+
         //Act
         novoFilme = new Filme("Filme de teste", "1:22", "test");
-        
+
         //Assert
-        Assert.AreEqual("Filme de teste",novoFilme.Titulo);
+        Assert.AreEqual("Filme de teste", novoFilme.Titulo);
     }
 
     [TestMethod]
@@ -24,11 +24,12 @@ public class TesteUnitario
     {
         //Arrange
         Filme novoFilme = new Filme("Filme de teste", "1:22", "test");
-        
+
         //Act
         novoFilme.Titulo = "Titulo Editado";
-        
+
         //Assert
-        Assert.AreEqual("Titulo Editado",novoFilme.Titulo);
+        Assert.AreEqual("Titulo Editado", novoFilme.Titulo);
     }
+
 }

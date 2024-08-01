@@ -9,5 +9,15 @@
       <jdbc-url>Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ControleDeCinemaOrm;Integrated Security=True</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="ControleDeCinemaOrmTests" uuid="7264752d-3ae6-4c53-8a98-e9947d553ebe">
+      <driver-ref>sqlserver.localdb.jb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Server=(localdb)\MSSQLLocalDB;Database=ControleDeCinemaOrmTests</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="LOCAL_DB_INSTANCE" value="MSSQLLocalDB" />
+      </jdbc-additional-properties>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

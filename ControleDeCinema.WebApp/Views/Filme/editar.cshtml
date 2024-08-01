@@ -1,11 +1,11 @@
-﻿@model ControleDeCinema.WebApp.Models.InserirFilmeViewModel
+﻿@model ControleDeCinema.WebApp.Models.EditarFilmeViewModel
 
 @{
     Layout = "_Layout";
-    ViewBag.Title = "Inserir Filme";
+    ViewBag.Title = "Editar Filme";
 }
 <div class="container">
-    <form asp-action="Inserir">
+    <form asp-action="Editar">
         <div class="col-md-6">
             <label class="control-label fw-semibold">Nome</label>
             <input type="text" class="form-control" asp-for="Titulo"/>

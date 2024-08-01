@@ -31,4 +31,42 @@ public class FilmeController : Controller
         ViewBag.Mensagem = $"O Filme {novoFilme.Titulo} foi cadastrado com sucesso";
         return View("mensagens");
     }
+
+    [HttpGet]
+    public ViewResult Editar(int id)
+    {
+        var db = new ControleDeCinamaDbContext();
+        var repositorioFilme = new RepositorioFilme(db);
+
+        var filme = repositorioFilme.SelecionarPorId(id);
+
+        var editarFilmeVm = new EditarFilmeViewModel()
+        {
+                Id = filme.Id,
+                Titulo = filme.Titulo,
+                Duracao = filme.Duracao,
+                Genero = filme.Genero
+        };
+        return View(editarFilmeVm);
+    }
+
+    [HttpPost]
+    public ViewResult Editar(EditarFilmeViewModel editarFilmeVm)
+    {
+        if (!ModelState.IsValid)
+            return View(editarFilmeVm);
+        
+        var db = new ControleDeCinamaDbContext();
+        var repositorioFilme = new RepositorioFilme(db);
+
+        var filmeOriginal = repositorioFilme.SelecionarPorId(editarFilmeVm.Id);
+
+        var filmeEditado = new Filme(editarFilmeVm.Titulo, editarFilmeVm.Duracao, editarFilmeVm.Genero);
+
+        repositorioFilme.Editar(filmeOriginal,filmeEditado);
+        
+        ViewBag.Mensagem = $"O Filme {filmeOriginal.Id} foi editado com sucesso";
+        
+        return View("mensagens");
+    }
 }

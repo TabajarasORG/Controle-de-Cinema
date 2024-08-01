@@ -33,4 +33,35 @@ public class TesteIntegrado
         //Assert
         Assert.IsNotNull(repositorioFilme);
     }
+
+    [TestMethod]
+    public void Deve_Editar_Filme()
+    {
+        //Arrange
+        var filme = new Filme("Titulo original", "1:45", "test");
+        repositorioFilme.Inserir(filme);
+        var filmeEditado = new Filme("Titulo editado", "1:45", "testEditado");
+        
+        //Act
+        repositorioFilme.Editar(filme, filmeEditado);
+        
+        //Assert
+        Assert.AreEqual("Titulo editado",filme.Titulo);
+        Assert.AreNotEqual("Titulo original",filme.Titulo);
+    }
+
+    [TestMethod]
+    public void Deve_Excluir_Filme()
+    {
+        //Arrange
+        var filme = new Filme("Titulo", "1:45", "test");
+        repositorioFilme.Inserir(filme);
+        
+        //Act
+        repositorioFilme.Excluir(filme);
+        
+        //Assert
+        var filmeSelecionado = repositorioFilme.SelecionarPorId(filme.Id);
+        Assert.IsNull(filmeSelecionado);
+    }
 }
