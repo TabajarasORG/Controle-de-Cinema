@@ -1,13 +1,12 @@
 ﻿@{
     string caminho = Context.Request.Path;
     
-    var salaAtivo = caminho.StartsWith("/sala") ? "nav-link active" : "nav-link";
-    var sessaoAtivo = caminho.StartsWith("/sessao") ? "nav-link active" : "nav-link";
-    var filmeAtivo = caminho.StartsWith("/filme") ? "nav-link active" : "nav-link";
+    var salaAtivo = caminho.StartsWith("/sala") ? "fw-bold" : "";
+    var sessaoAtivo = caminho.StartsWith("/sessao") ? "fw-bold" : "";
+    var filmeAtivo = caminho.StartsWith("/filme") ? "fw-bold" : "";
 }
 
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8"/>
@@ -20,10 +19,10 @@
     <header class="row row-cols-2 align-items-center my-3">
         <label class="fs-3 fw-semibold">Controle de Cinema</label>
         
-        <ul class="nav nav-pills d-grid d-md-flex justify-content-center-md-end">
-            <li class="nav-item"><a href="#" class="@salaAtivo">Salas</a></li>
-            <li class="nav-item"><a href="#" class="@sessaoAtivo">Sessao</a></li>
-            <li class="nav-item"><a href="/filme/listar" class="@filmeAtivo">Filmes</a></li>
+        <ul class="nav nav-pills d-grid d-md-flex justify-content-md-end">
+            <li class="nav-item "><a href="#" class="@salaAtivo m-2 text-dark text-decoration-none">Salas</a></li>
+            <li class="nav-item "><a href="#" class="@sessaoAtivo m-2 text-dark text-decoration-none">Sessao</a></li>
+            <li class="nav-item "><a href="/filme/listar" class="@filmeAtivo m-2 text-dark text-decoration-none">Filmes</a></li>
         </ul>
     </header>
 </nav>
@@ -44,4 +43,10 @@
 
 @RenderSection("Scripts", required: false)
 </body>
+
+<style>
+    nav-link active{
+       background-color: black; 
+    }
+</style>
 </html>

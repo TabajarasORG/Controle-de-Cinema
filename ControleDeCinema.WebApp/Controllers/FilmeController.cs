@@ -80,7 +80,8 @@ public class FilmeController : Controller
 
         var excluirFilmeVm = new ExcluirFilmeViewModel()
         {
-            Id = filme.Id
+            Id = filme.Id,
+            Titulo = filme.Titulo
         };
         return View(excluirFilmeVm);
     }
@@ -95,7 +96,7 @@ public class FilmeController : Controller
 
        repositorioFilme.Excluir(filme);
 
-       ViewBag.Mensagem = $"O Filme {excluirFilmeViewModel.Id} foi excluido com sucesso";
+       ViewBag.Mensagem = $"O Filme {excluirFilmeViewModel.Titulo} foi excluido com sucesso";
         
         return View("mensagens");
     }

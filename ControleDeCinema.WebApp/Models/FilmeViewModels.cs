@@ -28,6 +28,8 @@ public class EditarFilmeViewModel
 public class ExcluirFilmeViewModel
 {
     public int Id { get; set; }
+    
+    public string Titulo { get; set; }
 }
 
 public class ListarFilmeViewModel
