@@ -5,6 +5,7 @@ namespace ControleDeCinema.WebApp;
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            
             builder.Services.AddControllersWithViews();
             
             var app = builder.Build();
@@ -12,8 +13,6 @@ namespace ControleDeCinema.WebApp;
             app.UseStaticFiles();
 
             app.MapControllerRoute("rotas-padrao", "{controller}/{action}/{id?}");
-
-            app.MapGet("/", () => "Hello World!");
 
             app.Run();
         }

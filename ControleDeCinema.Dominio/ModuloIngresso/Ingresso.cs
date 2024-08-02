@@ -10,7 +10,12 @@ public class Ingresso : EntidadeBase
     public Filme Filme { get; set; }
     
     public Sessao Sessao { get; set; }
-    
+
+    public override void AtualizarInformacoes(EntidadeBase registroAtualizado)
+    {
+        throw new NotImplementedException();
+    }
+
     public override List<string> Validar()
     {
         throw new NotImplementedException();

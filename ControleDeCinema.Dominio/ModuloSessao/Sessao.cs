@@ -11,7 +11,12 @@ public class Sessao : EntidadeBase
     public Sala Sala { get; set; }
     
     public string HorarioDeInicio { get; set; }
-    
+
+    public override void AtualizarInformacoes(EntidadeBase registroAtualizado)
+    {
+        throw new NotImplementedException();
+    }
+
     public override List<string> Validar()
     {
         throw new NotImplementedException();
