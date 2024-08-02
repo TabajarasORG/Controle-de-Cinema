@@ -69,4 +69,34 @@ public class FilmeController : Controller
         
         return View("mensagens");
     }
+
+    [HttpGet]
+    public ViewResult Excluir(int id)
+    {
+        var db = new ControleDeCinamaDbContext();
+        var repositorioFilme = new RepositorioFilme(db);
+
+        var filme = repositorioFilme.SelecionarPorId(id);
+
+        var excluirFilmeVm = new ExcluirFilmeViewModel()
+        {
+            Id = filme.Id
+        };
+        return View(excluirFilmeVm);
+    }
+
+    [HttpPost, ActionName("excluir")]
+    public ViewResult Excluir(ExcluirFilmeViewModel excluirFilmeViewModel)
+    {
+        var db = new ControleDeCinamaDbContext();
+        var repositorioFilme = new RepositorioFilme(db);
+
+       var filme =  repositorioFilme.SelecionarPorId(excluirFilmeViewModel.Id);
+
+       repositorioFilme.Excluir(filme);
+
+       ViewBag.Mensagem = $"O Filme {excluirFilmeViewModel.Id} foi excluido com sucesso";
+        
+        return View("mensagens");
+    }
 }

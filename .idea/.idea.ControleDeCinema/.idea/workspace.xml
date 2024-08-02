@@ -9,14 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffa26fdf-fe2f-4458-a8c2-bcbf96496de5" name="Changes" comment="Inserir Filmes OK">
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Filme/editar.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/ModuloFilme/RepositorioFilme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/ModuloFilme/RepositorioFilme.cs" afterDir="false" />
+    <list default="true" id="ffa26fdf-fe2f-4458-a8c2-bcbf96496de5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Filme/excluir.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ControleDeCinema/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ControleDeCinema/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ControleDeCinema.WebApp/Controllers/FilmeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Controllers/FilmeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ControleDeCinema.WebApp/Models/FilmeViewModels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Models/FilmeViewModels.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Filme/inserir.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Filme/inserir.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinemaTestes/ModuloFilme/TesteIntegrado.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinemaTestes/ModuloFilme/TesteIntegrado.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinemaTestes/ModuloFilme/TesteUnitario.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinemaTestes/ModuloFilme/TesteUnitario.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +43,9 @@
     &quot;accountId&quot;: &quot;189c0a4a-41ac-45a6-9a87-58a2e765a1e5&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/leoda/RiderProjects/Controle-de-cinema/ControleDeCinemaTestes/ModuloFilme/TesteIntegrado.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -152,7 +152,8 @@
       <workItem from="1722521401683" duration="310000" />
       <workItem from="1722529681593" duration="118000" />
       <workItem from="1722530110995" duration="2595000" />
-      <workItem from="1722535458250" duration="6697000" />
+      <workItem from="1722535458250" duration="7052000" />
+      <workItem from="1722600625479" duration="1202000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -178,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722536537775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Impletado Editar Filme">
+      <option name="closed" value="true" />
+      <created>1722542865599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722542865600</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +211,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Implementacao de entidades" />
     <MESSAGE value="Inserir Filmes OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserir Filmes OK" />
+    <MESSAGE value="Impletado Editar Filme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impletado Editar Filme" />
   </component>
 </project>

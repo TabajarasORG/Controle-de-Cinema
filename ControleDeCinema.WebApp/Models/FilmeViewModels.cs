@@ -23,3 +23,8 @@ public class EditarFilmeViewModel
     
     public string Genero { get; set; }
 }
+
+public class ExcluirFilmeViewModel
+{
+    public int Id { get; set; }
+}
