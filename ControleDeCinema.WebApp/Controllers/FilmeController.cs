@@ -99,4 +99,24 @@ public class FilmeController : Controller
         
         return View("mensagens");
     }
+
+    [HttpGet]
+    public ViewResult Listar()
+    {
+        var db = new ControleDeCinamaDbContext();
+        var repositorioFilme = new RepositorioFilme(db);
+
+        var filmes = repositorioFilme.SelecionarTodos();
+
+        var filmeViewModel = filmes.Select(f => new ListarFilmeViewModel
+            {
+                Id = f.Id,
+                Titulo = f.Titulo,
+                Duracao = f.Duracao,
+                Genero = f.Genero
+                
+            });
+
+        return View(filmeViewModel);
+    }
 }

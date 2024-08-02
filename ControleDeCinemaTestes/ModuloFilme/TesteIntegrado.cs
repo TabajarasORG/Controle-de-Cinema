@@ -64,4 +64,17 @@ public class TesteIntegrado
         var filmeSelecionado = repositorioFilme.SelecionarPorId(filme.Id);
         Assert.IsNull(filmeSelecionado);
     }
+
+    [TestMethod]
+    public void Deve_Gerar_Lista_Filme()
+    {
+        //Arrange
+        List<Filme> listaFilme;
+        
+        //Act
+        listaFilme = repositorioFilme.SelecionarTodos();
+        
+        //Assert
+        Assert.IsNotNull(listaFilme);
+    }
 }

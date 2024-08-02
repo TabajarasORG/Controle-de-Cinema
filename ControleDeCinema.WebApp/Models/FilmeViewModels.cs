@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 
 namespace ControleDeCinema.WebApp.Models;
 
@@ -27,4 +28,15 @@ public class EditarFilmeViewModel
 public class ExcluirFilmeViewModel
 {
     public int Id { get; set; }
+}
+
+public class ListarFilmeViewModel
+{
+    public int Id { get; set; }
+    
+    public string Titulo { get; set; }
+    
+    public string Duracao { get; set; }
+    
+    public string Genero { get; set; }
 }
