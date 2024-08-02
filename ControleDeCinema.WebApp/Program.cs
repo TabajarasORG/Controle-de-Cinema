@@ -12,9 +12,7 @@ namespace ControleDeCinema.WebApp;
             app.UseStaticFiles();
 
             app.MapControllerRoute("rotas-padrao", "{controller}/{action}/{id?}");
-
-            app.MapGet("/", () => "Hello World!");
-
+            
             app.Run();
         }
     }
