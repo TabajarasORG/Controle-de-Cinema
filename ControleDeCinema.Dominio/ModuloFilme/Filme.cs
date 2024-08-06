@@ -9,7 +9,7 @@ public class Filme : EntidadeBase
     public String Duracao { get; set; }
 
     public String Genero { get; set; }
-
+    
 
     public override void AtualizarInformacoes(EntidadeBase registroAtualizado)
     {

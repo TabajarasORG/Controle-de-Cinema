@@ -1,7 +1,9 @@
 @{
     string caminho = Context.Request.Path;
 
-    var alaAtiva = caminho.StartsWith("/sala") ? "nav-link active" : "nav-link";
+    var SalaAtiva = caminho.StartsWith("/sala") ? "nav-link active" : "nav-link";
+    var SessaoAtiva = caminho.StartsWith("/sessao") ? "nav-link active" : "nav-link";
+    ;
 }
 
 <!DOCTYPE html>
@@ -19,7 +21,8 @@
             <label class="fs-3 fw-semibold">Controle de Cinema</label>
 
             <ul class="nav nav-pills d-grid d-md-flex justify-content-md-end">
-                <li class="nav-item"><a href="/sala/listar" class="@alaAtiva">Sala</a></li>
+                <li class="nav-item"><a href="/sala/listar" class="@SalaAtiva">Sala</a></li>
+                <li class="nav-item"><a href="/sessao/listar" class="@SessaoAtiva">Sessão</a></li>
             </ul>
         </header>
     </nav>

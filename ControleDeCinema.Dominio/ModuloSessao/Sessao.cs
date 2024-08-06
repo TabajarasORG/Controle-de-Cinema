@@ -10,15 +10,41 @@ public class Sessao : EntidadeBase
     
     public Sala Sala { get; set; }
     
-    public string HorarioDeInicio { get; set; }
+    public DateTime HorarioDeInicio { get; set; }
+
+    public Sessao()
+    {
+        
+    }
+    public Sessao(Filme filme, Sala sala, DateTime horarioDeInicio)
+    {
+        Filme = filme;
+        Sala = sala;
+        HorarioDeInicio = horarioDeInicio;
+    }
 
     public override void AtualizarInformacoes(EntidadeBase registroAtualizado)
     {
-        throw new NotImplementedException();
+        Sessao sessaoAtualizada = (Sessao)registroAtualizado;
+
+        Filme = sessaoAtualizada.Filme;
+        Sala = sessaoAtualizada.Sala;
+        HorarioDeInicio = sessaoAtualizada.HorarioDeInicio;
     }
 
     public override List<string> Validar()
     {
-        throw new NotImplementedException();
+        List<string> erros = new List<string>();
+
+        if (Filme == null)
+            erros.Add("O campo \"Filme\" é obrigatorio");
+
+        if (Sala == null)
+            erros.Add("O campo \"Sala\" é obrigatorio");
+        
+        if (HorarioDeInicio == null)
+            erros.Add("O campo \"Horario\" é obrigatorio");
+
+        return erros;
     }
 }

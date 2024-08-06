@@ -1,6 +1,8 @@
-﻿namespace ControleDeCinema.Dominio.ModuloSessao;
+﻿using ControleDeCinema.Dominio.Compartilhado;
 
-public interface IRepositorioSessao
+namespace ControleDeCinema.Dominio.ModuloSessao;
+
+public interface IRepositorioSessao : IRepositorio<Sessao>
 {
     
 }

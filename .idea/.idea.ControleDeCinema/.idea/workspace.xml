@@ -10,31 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffa26fdf-fe2f-4458-a8c2-bcbf96496de5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.Dominio/Compartilhado/IRepositorioBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloSala/IRepositorioSala.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/Conpartihado/ControleDeCinemaDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/Conpartihado/RepositorioBaseEmOrm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/ModuloSala/RepositorioSalaEmOrm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Controllers/SalaController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Models/NotificacaoViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Models/SalaViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sala/detalhes.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sala/editar.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sala/excluir.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sala/inserir.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sala/listar.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Shared/mensagens.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloSessao/IRepositorioSessao.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/ModuloSessao/RepositorioSessaoEmOrm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Controllers/SessaoController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Models/SessaoViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sessao/detalhes.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sessao/editar.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sessao/excluir.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sessao/inserir.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sessao/listar.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ControleDeCinema/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ControleDeCinema/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinema.Dominio/Compartilhado/EntidadeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.Dominio/Compartilhado/EntidadeBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloFilme/Filme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloFilme/Filme.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloIngresso/Ingresso.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloIngresso/Ingresso.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloSala/Sala.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloSala/Sala.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloSessao/Sessao.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.Dominio/ModuloSessao/Sessao.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/Conpartihado/ControleDeCinemaDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/Conpartihado/ControleDeCinemaDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/ControleDeCinema.Infra.Orm.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.Infra.Orm/ControleDeCinema.Infra.Orm.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinema.WebApp/ControleDeCinema.WebApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/ControleDeCinema.WebApp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinema.WebApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControleDeCinema.WebApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControleDeCinema.WebApp/Models/SalaViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Models/SalaViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sala/editar.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Sala/editar.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ControleDeCinema.WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +44,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/ModuloSala" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -72,37 +69,39 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2jywD1JV5cIjJADCqZKpfRbEv4L" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.ControleDeCinema.WebApp: http.executor": "Debug",
-    ".NET Launch Settings Profile.ControleDeCinema.WebApp: https.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/ModuloSala",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.ControleDeCinema.WebApp: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ControleDeCinema.WebApp: https.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/ModuloSessão&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "C#"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;C#&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\Cliente\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Cliente\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Cliente\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Cliente\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Cliente\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Cliente\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ControleDeCinema.WebApp: http">
     <configuration name="ControleDeCinema.WebApp: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ControleDeCinema.WebApp/ControleDeCinema.WebApp.csproj" />
@@ -163,7 +162,9 @@
       <workItem from="1722428971496" duration="2204000" />
       <workItem from="1722531422636" duration="2200000" />
       <workItem from="1722534261706" duration="7840000" />
-      <workItem from="1722614931458" duration="5285000" />
+      <workItem from="1722614931458" duration="12242000" />
+      <workItem from="1722703807189" duration="2151000" />
+      <workItem from="1722859256567" duration="15779000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -173,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722372590197</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Primeira implementação do modulo de sala">
+      <option name="closed" value="true" />
+      <created>1722622255717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722622255717</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +195,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/ModuloSessão" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -195,25 +216,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ControleDeCinema.WebApp/Controllers/SalaController.cs</url>
-          <line>36</line>
-          <properties documentPath="D:\Academia do programador\Controle de cinema\ControleDeCinema\ControleDeCinema.WebApp\Controllers\SalaController.cs" containingFunctionPresentation="Method 'Inserir'">
-            <startOffsets>
-              <option value="1012" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1013" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Primeira implementação do modulo de sala" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primeira implementação do modulo de sala" />
   </component>
 </project>
