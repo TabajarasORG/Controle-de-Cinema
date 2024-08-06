@@ -52,6 +52,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -89,7 +94,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "HotReloadSettingsPage",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -173,7 +178,63 @@
       <option name="project" value="LOCAL" />
       <updated>1722372590197</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementacao de entidades">
+      <option name="closed" value="true" />
+      <created>1722431533430</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722431533430</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Inserir Filmes OK">
+      <option name="closed" value="true" />
+      <created>1722536537775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722536537775</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Impletado Editar Filme">
+      <option name="closed" value="true" />
+      <created>1722542865599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722542865600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implementando excluir filme">
+      <option name="closed" value="true" />
+      <created>1722602342237</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722602342237</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implementado listagem de filmes">
+      <option name="closed" value="true" />
+      <created>1722605201386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722605201386</updated>
+    </task>
+    <task id="LOCAL-00007" summary="implementado Detalhes do filme">
+      <option name="closed" value="true" />
+      <created>1722615651377</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722615651377</updated>
+    </task>
+    <task id="LOCAL-00008" summary="implementado pagina inicial">
+      <option name="closed" value="true" />
+      <created>1722616460868</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722616460868</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +256,14 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Implementacao de entidades" />
+    <MESSAGE value="Inserir Filmes OK" />
+    <MESSAGE value="Impletado Editar Filme" />
+    <MESSAGE value="implementando excluir filme" />
+    <MESSAGE value="implementado listagem de filmes" />
+    <MESSAGE value="implementado Detalhes do filme" />
+    <MESSAGE value="implementado pagina inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementado pagina inicial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

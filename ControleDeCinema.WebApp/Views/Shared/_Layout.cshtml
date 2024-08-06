@@ -1,11 +1,13 @@
 @{
     string caminho = Context.Request.Path;
-
-    var alaAtiva = caminho.StartsWith("/sala") ? "nav-link active" : "nav-link";
+    
+    var salaAtivo = caminho.StartsWith("/sala") ? "fw-bold" : "";
+    var sessaoAtivo = caminho.StartsWith("/sessao") ? "fw-bold" : "";
+    var filmeAtivo = caminho.StartsWith("/filme") ? "fw-bold" : "";
 }
 
 <!DOCTYPE html>
-<html lang="pt-br" data-bs-theme="dark">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title - Controle de Cinema</title>
@@ -14,30 +16,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <nav class="container">
-        <header class="row row-cols-2 align-items-center my-3">
-            <label class="fs-3 fw-semibold">Controle de Cinema</label>
+<nav class="container">
+    <header class="row row-cols-2 align-items-center my-3">
+        <label class="fs-3 fw-semibold">Controle de Cinema</label>
+        
+        <ul class="nav nav-pills d-grid d-md-flex justify-content-md-end">
+            <li class="nav-item "><a href="#" class="@salaAtivo m-2 text-dark text-decoration-none">Salas</a></li>
+            <li class="nav-item "><a href="#" class="@sessaoAtivo m-2 text-dark text-decoration-none">Sessao</a></li>
+            <li class="nav-item "><a href="/filme/listar" class="@filmeAtivo m-2 text-dark text-decoration-none">Filmes</a></li>
+        </ul>
+    </header>
+</nav>
 
-            <ul class="nav nav-pills d-grid d-md-flex justify-content-md-end">
-                <li class="nav-item"><a href="/sala/listar" class="@alaAtiva">Sala</a></li>
-            </ul>
-        </header>
-    </nav>
 
-    <main class="container mt-4">
-        <h1>@ViewBag.Title</h1>
-        <hr/>
-        @RenderBody()
-    </main>
+<main class="container mt-4">
+    <h1 class="fs-4">@ViewBag.Title</h1>
+    <hr/>
+    @RenderBody()
+</main>
 
-    <footer class="border-top text-center mt-auto">
-        <p class="my-3">&copy; - 2024 - Controle de Bar 2.0</p>
-    </footer>
+<footer class="border-top text-center mt-auto">
+    &copy; - 2024 - Controle de Cinema na Web - Tabajara`s
+</footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script src="/lib/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-    
-    @await RenderSectionAsync("Scripts", required: false);
-    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="/lib/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+
+@RenderSection("Scripts", required: false)
+</body>
+
+<style>
+    nav-link active{
+       background-color: black; 
+    }
+</style>
 </html>
