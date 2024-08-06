@@ -4,7 +4,7 @@ namespace ControleDeCinema.WebApp.Models;
 
 public class InserirSalaViewModel
     {
-        [Required(ErrorMessage = "O campo numro é obrigatório!")]
+        [Required(ErrorMessage = "O campo numero é obrigatório!")]
         public string Numero { get; set; }
     
         [Range(

@@ -1,4 +1,5 @@
 ﻿using ControleDeCinema.Dominio.ModuloSala;
+using ControleDeCinema.Dominio.ModuloSessao;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -7,6 +8,7 @@ namespace ControleDeCinema.Infra.Orm.Conpartihado;
 public class ControleDeCinemaDbContext : DbContext
 {
     public DbSet<Sala> Salas { get; set; }
+    public DbSet<Sessao> Sessoes { get; set; }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -39,6 +41,31 @@ public class ControleDeCinemaDbContext : DbContext
                 salaBuilder.Property(s => s.Capacidade)
                     .IsRequired()
                     .HasColumnType("int");
+            });
+
+            modelBuilder.Entity<Sessao>(sessaoBuilder =>
+            {
+                sessaoBuilder.ToTable("TBSessao");
+
+                sessaoBuilder.Property(s => s.Id)
+                    .IsRequired()
+                    .ValueGeneratedOnAdd();
+
+                sessaoBuilder.HasOne(s => s.Filme)
+                    .WithMany()
+                    .HasForeignKey("Filme_Id")
+                    .HasConstraintName("FK_TBSessao_TBFilme")
+                    .IsRequired();
+
+                sessaoBuilder.HasOne(s => s.Sala)
+                    .WithMany()
+                    .HasForeignKey("Sala_Id")
+                    .HasConstraintName("FK_TBSessao_TBSala")
+                    .IsRequired();
+
+                sessaoBuilder.Property(s => s.HorarioDeInicio)
+                    .IsRequired()
+                    .HasColumnType("datetime2");
             });
             
             base.OnModelCreating(modelBuilder);
